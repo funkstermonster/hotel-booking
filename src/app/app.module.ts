@@ -8,18 +8,25 @@ import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule,
+    AppRoutingModule
+
 
   ],
   providers: [],
