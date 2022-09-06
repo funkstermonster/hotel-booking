@@ -1,43 +1,63 @@
-<h4 class="login">Login</h4>
-<form [formGroup]="signinForm" (ngSubmit)="onSignin()">
-  <div class="form-container">
-    <div class="form-group">
-      <label>Username</label>
-      <input
-        type="text"
-        formControlName="username"
-        placeholder="Username"
-        class="form-control"
-      />
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <img src="../../assets/Rectangle1.png" alt="Mountains" width="375px" />
+      <h4>Login</h4>
+      <div class="form-container">
+        <form [formGroup]="signinForm" (ngSubmit)="onSignin()">
+          <div class="form-group">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                formControlName="username"
+                placeholder="Username"
+                class="form-control username"
+              />
+              <mat-icon class="person">person_outline</mat-icon>
+              <small
+                class="text-danger text-start d-block"
+                *ngIf="username.touched && form['username'].errors?.['required']"
+              >
+                Username is required!
+              </small>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-wrapper">
+              <input
+                type="password"
+                formControlName="password"
+                placeholder="Password"
+                class="form-control password"
+              />
+              <mat-icon class="eye">remove_red_eye</mat-icon>
+              <small
+                class="text-danger text-start d-block"
+                *ngIf="password.touched && form['password'].errors?.['pattern']"
+                >Password must contain letters and numbers!</small
+              >
+            </div>
+          </div>
 
-      <small
-        class="text-danger"
-        *ngIf="username.touched && form['username'].errors?.['required']"
-      >
-        Username is required!
-      </small>
-    </div>
-
-    <div>
-      <label>Password</label>
-      <input
-        type="password"
-        formControlName="password"
-        placeholder="Password"
-        class="form-control"
+          <div class="text-center mt-2">
+            <button
+              mat-button
+              class="login-button"
+              [disabled]="signinForm.invalid"
+            >
+              Login
+            </button>
+          </div>
+          <small class="text-start d-block register-note"
+            >No account yet? <a href="#">Register</a>
+          </small>
+        </form>
+      </div>
+      <img
+        src="../../assets/Rectangle3.jpg"
+        alt="Mountains"
+        class="picture-bot"
       />
-      <small
-        class="text-danger"
-        *ngIf="password.touched && form['password'].errors?.['pattern']"
-        >Password must contain letters and numbers!</small
-      >
     </div>
   </div>
-
-  <div class="text-center mt-2">
-    <button type="submit" class="btn btn-primary" [disabled]="signinForm.invalid">
-      Login
-    </button>
-  </div>
-  <small>No account yet? Register</small>
-</form>
+</div>
