@@ -21,3 +21,8 @@
 ::ng-deep button.active {
   border: 4px solid rgba(255, 255, 255, 0.18) !important;
 }
+
+div.bottom {
+  position: fixed;
+  bottom: 0;
+}

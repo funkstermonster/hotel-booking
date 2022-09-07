@@ -13,13 +13,19 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { TripCardComponent } from './trip-card/trip-card.component';
+import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
+import { AlertComponent } from './alert/alert.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FormLoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    TripCardComponent,
+    BottomNavComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,

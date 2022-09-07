@@ -22,5 +22,8 @@ export class DashboardComponent {
     }
   ]
 
+  sequence(n: number): Array<number> {
+    return Array(n);
+  }
 
 }

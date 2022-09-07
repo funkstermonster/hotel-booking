@@ -1,5 +1,6 @@
 <div class="container">
   <div class="row">
+    <app-alert></app-alert>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <h1>Let's start a new trip!</h1>
       <ngb-carousel *ngIf="images">
@@ -11,4 +12,14 @@
       </ngb-carousel>
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor="let card of sequence(4)">
+      <app-trip-card></app-trip-card>
+    </div>
+  </div>
+  <div class="text-center">
+    <app-bottom-nav></app-bottom-nav>
+  </div>
 </div>
+
+
