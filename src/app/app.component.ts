@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'trip';
+  slides = [
+    {'image': 'https://picsum.photos/343/212'},
+    {'image': 'https://picsum.photos/343/212'},
+    {'image': 'https://picsum.photos/343/212'},
+    {'image': 'https://picsum.photos/343/212'}
+  ]
 }

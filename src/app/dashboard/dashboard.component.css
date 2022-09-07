@@ -1,0 +1,23 @@
+::ng-deep.carousel-indicators [data-bs-target] {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 20px;
+
+
+}
+::ng-deep div.carousel-indicators {
+  background-color: rgb(33, 33, 91);
+  margin: 0;
+  height: 50px;
+  align-items: center;
+}
+
+::ng-deep button.carousel-control-next, ::ng-deep button.carousel-control-prev  {
+
+  display: none;
+}
+
+::ng-deep button.active {
+  border: 4px solid rgba(255, 255, 255, 0.18) !important;
+}
