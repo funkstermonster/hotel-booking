@@ -29,6 +29,8 @@ div.bottom {
   text-align: center;
   padding: 0;
   max-width: 375px;
+  padding-left: 15px;
+  padding-right: 17px;
 }
 
 h1 {
@@ -40,6 +42,7 @@ h1 {
   top: 10px;
   width: 225px;
   height: 16px;
+  margin-bottom: 34px;
 }
 
 .row {
@@ -51,8 +54,9 @@ div[class^="col-"] {
 }
 
 .left-col {
-  padding-right: 16p
+  padding-right: 8px !important;
 }
 
-
-
+.right-col {
+  padding-left: 8px !important;
+}
