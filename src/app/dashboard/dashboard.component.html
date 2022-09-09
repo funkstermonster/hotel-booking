@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <app-alert></app-alert>
+    <app-alert [succesesedBook]="booked"></app-alert>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <h1>Let's start a new trip!</h1>
       <ngb-carousel *ngIf="images">
@@ -14,7 +14,7 @@
   </div>
   <div class="row">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 p-0" *ngFor="let card of sequence(4); let i = index" [ngClass] ="i % 2 === 0 ? 'left-col' : 'right-col'">
-      <app-trip-card></app-trip-card>
+      <app-trip-card (booked)="handleBooking($event)"></app-trip-card>
     </div>
   </div>
   <div class="text-center">

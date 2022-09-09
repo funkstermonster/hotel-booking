@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
+  booked = false;
 
   images = [
     {
@@ -24,6 +25,10 @@ export class DashboardComponent {
 
   sequence(n: number): Array<number> {
     return Array(n);
+  }
+
+  handleBooking(booked: boolean) {
+    this.booked = booked;
   }
 
 }

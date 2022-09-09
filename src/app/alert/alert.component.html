@@ -1,14 +1,14 @@
-<div class="alert">
+<div class="alert" *ngIf="succesesedBook && !dismissed">
   <div class="container">
-    <div class="row flex">
-      <div class="col-auto">
+    <div class="row">
+      <div class="col-2">
         <mat-icon class="check">check</mat-icon>
       </div>
       <div class="col-8">
         <span>Your trip was successfully booked!</span>
       </div>
-      <div class="col-auto">
-        <mat-icon class="close">close</mat-icon>
+      <div class="col-2">
+        <mat-icon class="close" (click)="onDismiss()">close</mat-icon>
       </div>
     </div>
   </div>
