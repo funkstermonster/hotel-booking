@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor="let card of sequence(4)">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 p-0" *ngFor="let card of sequence(4); let i = index" [ngClass] ="{'left-col': i % 2 === 0 }">
       <app-trip-card></app-trip-card>
     </div>
   </div>
