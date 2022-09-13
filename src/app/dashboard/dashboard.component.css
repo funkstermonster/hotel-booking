@@ -1,3 +1,5 @@
+
+
 ::ng-deep.carousel-indicators [data-bs-target] {
   height: 12px;
   width: 12px;
@@ -31,10 +33,10 @@ div.bottom {
   max-width: 375px;
   padding-left: 15px;
   padding-right: 17px;
+  margin-top: 59px;
 }
 
 h1 {
-  margin-top: 69px;
   color: rgba(0, 0, 0, 1);
   font-weight: 700;
   font-size: 24px;
@@ -43,6 +45,7 @@ h1 {
   width: 225px;
   height: 16px;
   margin-bottom: 34px;
+  margin-top: 10px;
 }
 
 .row {
